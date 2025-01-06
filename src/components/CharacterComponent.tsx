@@ -9,12 +9,12 @@ type CharacterProtorype = {
 
 const CharacterComponent:FC<CharacterProtorype> = ({character, children}) => {
     return (
-        <div>
-            <h2 className='italic  text-orange-400 text-center text-2xl'>{character.name} {character.surname} </h2>
+        <div className=''>
+            <h2 className='italic  text-orange-400 text-center text-2xl '>{character.name} {character.surname} </h2>
             <p> age : {character.age} </p>
-            <div className='flex row  '>
-                <img className='inline' src={character.photo} alt=""/>
-                <p className='inline-block border border-amber-400 p-1'>{children}</p>
+            <div className='flex row  items-center' >
+                <img className='inline  ' src={character.photo} alt=""/>
+                <p className='flex border border-orange-400 p-1  '>{children}</p>
             </div>
 
         </div>
