@@ -9,7 +9,7 @@ function App() {
   return (
       <>
 <FamilyComponent/>
-          <CharacterComponent character={simpsons[0]}></CharacterComponent>
+          {/*<CharacterComponent character={simpsons[0]}></CharacterComponent>*/}
       </>
   )
 }
