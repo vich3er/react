@@ -10,10 +10,10 @@ type CharacterProtorype = {
 const CharacterComponent:FC<CharacterProtorype> = ({character, children}) => {
     return (
         <div>
-<h2>{character.name} {character.surname} </h2>
-            <p>{character.age} </p>
+<h2 className='text-orange-400 text-center text-2xl'>{character.name} {character.surname} </h2>
+            <p> age : {character.age} </p>
             <p>{children}</p>
-            <img src={character.photo} alt=""/>
+            <img  src={character.photo} alt=""/>
         </div>
     );
 };
