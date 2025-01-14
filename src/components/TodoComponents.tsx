@@ -14,7 +14,7 @@ const TodoComponents = () => {
    console.log(tasks);
     console.log(Array.isArray(tasks));
     return (
-        <div>
+        <div className='grid grid-cols-1 gap-4'>
 
             {
                 tasks.map(task =>  <TodoComponent item={task}  key={task.id}/> )

@@ -9,7 +9,9 @@ const TodoComponent:FC<TaskProt> = ({item}) => {
     console.log(item);
     return (
         <div className={style}>
-            {item.todo} {item.completed + ""} {item.userId}
+           <p> userId: {item.userId}</p>
+            <p>task: {item.todo}</p>
+            <p>comleted: {item.completed + ""}</p>
         </div>
     );
 };
