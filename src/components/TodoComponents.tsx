@@ -11,6 +11,7 @@ const [usersTasks, setUserTask] = useState<ITodo[]>([])
             res => setUserTask(res)
         )
     }, []);
+    console.log(Array.isArray(usersTasks));
     return (
         <div className="grid grid-cols-4 gap-2">
             {
