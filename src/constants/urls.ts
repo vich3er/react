@@ -1,8 +1,7 @@
 const baseUrl = "https://dummyjson.com"
 
 export const usersUrl = {
-    getAllUsers : 'https://dummyjson.com/users?sortBy=firstName&order=asc'
-        //`${baseUrl}/users`,
+    getAllUsers : `${baseUrl}/users`,
 }
 
 export const cartsUrl = {
