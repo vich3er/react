@@ -14,7 +14,7 @@ const CartsComp = () => {
  }, [user.id]);
     console.log(carts);
     // console.log(document.getElementById(String(user.id)));
-    document.getElementById(user.id).classList.toggle('bg-amber-300');
+    // document.getElementById(user.id).classList.toggle('bg-amber-300');
     return (
         <div>
 
