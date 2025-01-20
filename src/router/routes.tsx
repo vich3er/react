@@ -5,7 +5,7 @@ import CartsComp from "../components/CartsComp.tsx";
 export const routes = createBrowserRouter(
     [
         {path: '', element: <MainPage/>},
-        { path: 'carts', element: <CartsComp/>
+        { path: 'carts/:userId', element: <CartsComp/>
                 }
 
 

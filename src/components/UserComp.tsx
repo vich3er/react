@@ -10,7 +10,7 @@ const UserComp:FC<UserPropType> = ({item}) => {
 
 
         <>
-            <li id={item.id} ><Link to={'carts'} state={item}>{item.username}</Link></li>
+            <li id={item.id} ><Link to={'carts/'+ item.id} state={item}>{item.username}</Link></li>
         </>
 
     );
