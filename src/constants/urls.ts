@@ -2,7 +2,7 @@ const baseUrl = "https://dummyjson.com"
 
 export const usersUrl = {
     getAllUsers : `${baseUrl}/users`,
-}
+    getUserById : (userId: number)=> baseUrl + "/users" + userId}
 
 export const cartsUrl = {
     getAllCarts : `${baseUrl}/carts`,

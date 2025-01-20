@@ -13,7 +13,8 @@ const CartsComp = () => {
      cartsServise.getCartsByUserId(+user.id).then(res=>setCarts(res))
  }, [user.id]);
     console.log(carts);
-
+    // console.log(document.getElementById(String(user.id)));
+    document.getElementById(user.id).classList.toggle('bg-amber-300');
     return (
         <div>
 
@@ -23,6 +24,8 @@ const CartsComp = () => {
                 (
                 <p>У цього користувача немає замовлень</p>
             )}
+
+
         </div>
     );
 };

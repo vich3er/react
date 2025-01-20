@@ -7,11 +7,12 @@ type UserPropType= {
 
 const UserComp:FC<UserPropType> = ({item}) => {
     return (
-        <div>
-            <ul>
-            <li><Link to={'carts'} state={item}>{item.username}</Link></li>
-            </ul>
-            </div>
+
+
+        <>
+            <li id={item.id} ><Link to={'carts'} state={item}>{item.username}</Link></li>
+        </>
+
     );
 };
 
