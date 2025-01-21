@@ -26,7 +26,7 @@ const CartsComp = () => {
             {userId   && (   carts.length > 0 ? (
                         carts.map((cart, i)=> {return (
                             <>
-                                <p key={i}>Кошик {i + 1}</p>
+                                <p key={i}>Кошик {i+ 1}</p>
                                 <CartComp key={cart.id} cart={cart} />
                             </>
                         )
