@@ -19,16 +19,22 @@ const CartsComp = () => {
      cartsServise.getCartsByUserId(userId).then(res=>setCarts(res))
  }, [userId]);
     console.log(carts);
-
+  const cartsLength = carts.length
     return (
         <div>
 
-            {carts.length > 0 ? (
-                carts.map(cart => <CartComp key={cart.id} cart={cart}/>)
-            ) :
-                (
-                <p>У цього користувача немає замовлень</p>
-            )}
+            {userId   && (   carts.length > 0 ? (
+                        carts.map((cart, i)=> {return (
+                            <>
+                                <p key={i}>Кошик {i + 1}</p>
+                                <CartComp key={cart.id} cart={cart} />
+                            </>
+                        )
+                        })
+                ) :
+                    (
+                        <p>У цього користувача немає замовлень</p>
+                    )) }
 
 
         </div>
