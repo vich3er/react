@@ -1,5 +1,6 @@
 import axios from "axios";
 import {ICar} from "../models/ICar.ts";
+import {ICar2} from "../models/ICar2.ts";
 
 
 const axiosInstance = axios.create({
@@ -12,4 +13,10 @@ export const getAllCars = async () : Promise<ICar[]>=>{
     console.log(data);
     return data;
 
+}
+
+export const addCar = async (car : ICar2) : Promise<ICar> => {
+    const {data} = await axiosInstance.post<ICar>('/cars', car);
+    console.log(data);
+    return data;
 }

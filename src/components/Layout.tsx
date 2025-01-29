@@ -3,7 +3,7 @@ import {Link, Outlet} from "react-router-dom";
 
 const  App = () => {
     return (
-        <div>
+        <div className="h-screen">
             <ul className='bg-amber-300'>
                 <li><Link to={"cars"}>Переглянути машини</Link></li>
                 <li><Link to={"create-car"}>Додати машину</Link></li>
