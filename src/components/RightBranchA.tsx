@@ -7,7 +7,7 @@ export const RightBranchA = () => {
     return (
         <div> RightBranchA
             <button onClick={() => {
-                increment(counterValue);
+                increment(counterValue); // викликає інкремент з аап з сетером
             }}>click me to increment counter in LBA</button>
 
 

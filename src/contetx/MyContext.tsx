@@ -10,4 +10,4 @@ export const init = {
         console.log(obj);
     }
 };
-export const MyContext = createContext<MyContextType>(init);
+export const MyContext = createContext<MyContextType>(init);// тут має бути дефолтний об'єкт
